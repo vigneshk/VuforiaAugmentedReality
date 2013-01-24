@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15DB4E011461868F00502685 /* BTAParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DB4DFF1461868E00502685 /* BTAParentViewController.m */; };
+		15DF68F214517A9A00120640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DF68F114517A9A00120640 /* UIKit.framework */; };
+		15DF68F414517A9A00120640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DF68F314517A9A00120640 /* Foundation.framework */; };
+		15DF68F614517A9A00120640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DF68F514517A9A00120640 /* CoreGraphics.framework */; };
+		15DF68F814517A9A00120640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DF68F714517A9A00120640 /* QuartzCore.framework */; };
+		15DF68FA14517A9A00120640 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DF68F914517A9A00120640 /* OpenGLES.framework */; };
+		15DF690314517A9A00120640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DF690214517A9A00120640 /* main.m */; };
+		15DF690614517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15DF690514517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.mm */; };
+		15F18A08145EF7CF0026C8D5 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = 15F18A05145EF7CF0026C8D5 /* Tarmac.dat */; };
+		15F18A09145EF7CF0026C8D5 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = 15F18A06145EF7CF0026C8D5 /* Tarmac.xml */; };
+		15F18A0A145EF7CF0026C8D5 /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F18A07145EF7CF0026C8D5 /* TextureTeapotRed.png */; };
+		15F21A2B145EE33900C903EC /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A19145EE33900C903EC /* AR_EAGLView.mm */; };
+		15F21A2C145EE33900C903EC /* ARParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A1B145EE33900C903EC /* ARParentViewController.m */; };
+		15F21A2D145EE33900C903EC /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A1D145EE33900C903EC /* ARViewController.mm */; };
+		15F21A2E145EE33900C903EC /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A1F145EE33900C903EC /* OverlayView.m */; };
+		15F21A2F145EE33900C903EC /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A21145EE33900C903EC /* OverlayViewController.mm */; };
+		15F21A30145EE33900C903EC /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A23145EE33900C903EC /* QCARutils.mm */; };
+		15F21A33145EE33900C903EC /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A27145EE33900C903EC /* ShaderUtils.cpp */; };
+		15F21A34145EE33900C903EC /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A2A145EE33900C903EC /* Texture.mm */; };
+		15F21A37145EE46C00C903EC /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F21A36145EE46C00C903EC /* EAGLView.mm */; };
+		15F21A39145EE4CE00C903EC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F21A38145EE4CE00C903EC /* CoreMedia.framework */; };
+		15F21A3B145EE4D800C903EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F21A3A145EE4D800C903EC /* SystemConfiguration.framework */; };
+		15F21A3D145EE4DF00C903EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F21A3C145EE4DF00C903EC /* AVFoundation.framework */; };
+		15F21A3F145EE4E700C903EC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F21A3E145EE4E700C903EC /* CoreVideo.framework */; };
+		15F21A41145EE4F100C903EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F21A40145EE4F100C903EC /* Security.framework */; };
+		76D674E214D05114003D8330 /* icon_vuforia_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 76D674E114D05114003D8330 /* icon_vuforia_57x57.png */; };
+		E30AB353166DD31900D06397 /* FlakesBox.dat in Resources */ = {isa = PBXBuildFile; fileRef = E30AB34F166DD31900D06397 /* FlakesBox.dat */; };
+		E30AB354166DD31900D06397 /* FlakesBox.xml in Resources */ = {isa = PBXBuildFile; fileRef = E30AB350166DD31900D06397 /* FlakesBox.xml */; };
+		E30AB355166DD31900D06397 /* TextureBowlAndSpoon.png in Resources */ = {isa = PBXBuildFile; fileRef = E30AB351166DD31900D06397 /* TextureBowlAndSpoon.png */; };
+		E30AB356166DD31900D06397 /* TextureWireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = E30AB352166DD31900D06397 /* TextureWireframe.png */; };
+		E3652240166E3C13002E6AD5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E365223F166E3C13002E6AD5 /* Default-568h@2x.png */; };
+		E3652242166E4731002E6AD5 /* 8018.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3652241166E4730002E6AD5 /* 8018.jpg */; };
+		E38F39E0166AD9E8007A6A7D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F39DF166AD9E8007A6A7D /* Default.png */; };
+		E38F39E7166AE642007A6A7D /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E38F39E6166AE642007A6A7D /* banana.jpg */; };
+		E38F39EA166B1C1B007A6A7D /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = E38F39E8166B1C1B007A6A7D /* StonesAndChips.dat */; };
+		E38F39EB166B1C1B007A6A7D /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = E38F39E9166B1C1B007A6A7D /* StonesAndChips.xml */; };
+		E38F39EE166B347F007A6A7D /* statueOfEvertTaube.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E38F39ED166B347F007A6A7D /* statueOfEvertTaube.jpg */; };
+		E38F3A14166B6EEF007A6A7D /* chair.tga in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A0E166B6EEF007A6A7D /* chair.tga */; };
+		E38F3A15166B6EEF007A6A7D /* demon.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A0F166B6EEF007A6A7D /* demon.png */; };
+		E38F3A16166B6EEF007A6A7D /* letter_A.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A10166B6EEF007A6A7D /* letter_A.png */; };
+		E38F3A17166B6EEF007A6A7D /* letter_C.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A11166B6EEF007A6A7D /* letter_C.png */; };
+		E38F3A18166B6EEF007A6A7D /* letter_Q.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A12166B6EEF007A6A7D /* letter_Q.png */; };
+		E38F3A19166B6EEF007A6A7D /* letter_R.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A13166B6EEF007A6A7D /* letter_R.png */; };
+		E38F3A1C166B7064007A6A7D /* green_glow.png in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A1B166B7064007A6A7D /* green_glow.png */; };
+		E38F3A26166C8F84007A6A7D /* Pretty_House.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A25166C8F84007A6A7D /* Pretty_House.jpg */; };
+		E38F3A29166C97BF007A6A7D /* Sofa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A28166C97BB007A6A7D /* Sofa.jpg */; };
+		E38F3A32166CB4C3007A6A7D /* ButtonOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A2B166CB4B2007A6A7D /* ButtonOverlay.mm */; };
+		E38F3A33166CB4C3007A6A7D /* Dominoes.mm in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A2D166CB4B7007A6A7D /* Dominoes.mm */; };
+		E38F3A34166CB4C3007A6A7D /* DomParentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A2F166CB4BD007A6A7D /* DomParentViewController.mm */; };
+		E38F3A35166CB4C3007A6A7D /* SampleMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A30166CB4C0007A6A7D /* SampleMath.cpp */; };
+		E38F3A37166CBA20007A6A7D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38F3A36166CBA1C007A6A7D /* AudioToolbox.framework */; };
+		E38F3A39166CC1E6007A6A7D /* ButtonOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A38166CC1E4007A6A7D /* ButtonOverlay.xib */; };
+		E38F3A3B166CC721007A6A7D /* domino_tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A3A166CC721007A6A7D /* domino_tap.wav */; };
+		E38F3A3E166CEA35007A6A7D /* TRS2012.dat in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A3C166CEA31007A6A7D /* TRS2012.dat */; };
+		E38F3A3F166CEA35007A6A7D /* TRS2012.xml in Resources */ = {isa = PBXBuildFile; fileRef = E38F3A3D166CEA32007A6A7D /* TRS2012.xml */; };
+		E38F3A4D166D1558007A6A7D /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A46166D1558007A6A7D /* ARCoordinate.m */; };
+		E38F3A4E166D1558007A6A7D /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A48166D1558007A6A7D /* ARGeoCoordinate.m */; };
+		E38F3A4F166D1558007A6A7D /* ARGeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A4A166D1558007A6A7D /* ARGeoViewController.m */; };
+		E38F3A50166D1558007A6A7D /* ARGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F3A4C166D1558007A6A7D /* ARGLViewController.m */; };
+		E38F3A52166D156F007A6A7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38F3A51166D156E007A6A7D /* MapKit.framework */; };
+		E38F3A54166D1587007A6A7D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38F3A53166D1586007A6A7D /* CoreLocation.framework */; };
+		E3A82E36166F03BB00E09067 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A82E35166F03BB00E09067 /* libQCAR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15DB4DFE1461868E00502685 /* BTAParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAParentViewController.h; sourceTree = "<group>"; };
+		15DB4DFF1461868E00502685 /* BTAParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAParentViewController.m; sourceTree = "<group>"; };
+		15DF68ED14517A9A00120640 /* VuforiaAugmentedReality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VuforiaAugmentedReality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DF68F114517A9A00120640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15DF68F314517A9A00120640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15DF68F514517A9A00120640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15DF68F714517A9A00120640 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		15DF68F914517A9A00120640 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		15DF68FD14517A9A00120640 /* VuforiaAugmentedReality-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VuforiaAugmentedReality-Info.plist"; sourceTree = "<group>"; };
+		15DF690114517A9A00120640 /* VuforiaAugmentedReality-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VuforiaAugmentedReality-Prefix.pch"; sourceTree = "<group>"; };
+		15DF690214517A9A00120640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15DF690414517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VuforiaAugmentedRealityAppDelegate.h; sourceTree = "<group>"; };
+		15DF690514517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VuforiaAugmentedRealityAppDelegate.mm; sourceTree = "<group>"; };
+		15DF690E14517A9A00120640 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		15E87DF31462AD13004113B1 /* BGShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BGShader.fsh; path = VuforiaAugmentedReality/Shaders/BGShader.fsh; sourceTree = SOURCE_ROOT; };
+		15E87DF41462AD13004113B1 /* BGShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = BGShader.vsh; path = VuforiaAugmentedReality/Shaders/BGShader.vsh; sourceTree = SOURCE_ROOT; };
+		15F18A01145EEF520026C8D5 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = ../../build/lib/arm/libQCAR.a; sourceTree = SOURCE_ROOT; };
+		15F18A05145EF7CF0026C8D5 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
+		15F18A06145EF7CF0026C8D5 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
+		15F18A07145EF7CF0026C8D5 /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
+		15F21A18145EE33900C903EC /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AR_EAGLView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A19145EE33900C903EC /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = AR_EAGLView.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A1A145EE33900C903EC /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARParentViewController.h; sourceTree = "<group>"; };
+		15F21A1B145EE33900C903EC /* ARParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ARParentViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		15F21A1C145EE33900C903EC /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ARViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A1D145EE33900C903EC /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = ARViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A1E145EE33900C903EC /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		15F21A1F145EE33900C903EC /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		15F21A20145EE33900C903EC /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		15F21A21145EE33900C903EC /* OverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = OverlayViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A22145EE33900C903EC /* QCARutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCARutils.h; sourceTree = "<group>"; };
+		15F21A23145EE33900C903EC /* QCARutils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QCARutils.mm; sourceTree = "<group>"; };
+		15F21A25145EE33900C903EC /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		15F21A26145EE33900C903EC /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		15F21A27145EE33900C903EC /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
+		15F21A28145EE33900C903EC /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
+		15F21A29145EE33900C903EC /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		15F21A2A145EE33900C903EC /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
+		15F21A36145EE46C00C903EC /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = EAGLView.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15F21A38145EE4CE00C903EC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		15F21A3A145EE4D800C903EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		15F21A3C145EE4DF00C903EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		15F21A3E145EE4E700C903EC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		15F21A40145EE4F100C903EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		15F21A42145EE58300C903EC /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teapot.h; path = ../Teapot.h; sourceTree = "<group>"; };
+		76D674E114D05114003D8330 /* icon_vuforia_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_vuforia_57x57.png; path = ../icon_vuforia_57x57.png; sourceTree = "<group>"; };
+		E30AB34D166DD30200D06397 /* BowlAndSpoonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowlAndSpoonModel.h; sourceTree = "<group>"; };
+		E30AB34F166DD31900D06397 /* FlakesBox.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlakesBox.dat; sourceTree = "<group>"; };
+		E30AB350166DD31900D06397 /* FlakesBox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FlakesBox.xml; sourceTree = "<group>"; };
+		E30AB351166DD31900D06397 /* TextureBowlAndSpoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureBowlAndSpoon.png; sourceTree = "<group>"; };
+		E30AB352166DD31900D06397 /* TextureWireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureWireframe.png; sourceTree = "<group>"; };
+		E365223F166E3C13002E6AD5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E3652241166E4730002E6AD5 /* 8018.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8018.jpg; sourceTree = "<group>"; };
+		E38F39DF166AD9E8007A6A7D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		E38F39E2166AE57B007A6A7D /* banana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = banana.h; path = ../banana.h; sourceTree = "<group>"; };
+		E38F39E6166AE642007A6A7D /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
+		E38F39E8166B1C1B007A6A7D /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = StonesAndChips.dat; sourceTree = "<group>"; };
+		E38F39E9166B1C1B007A6A7D /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StonesAndChips.xml; sourceTree = "<group>"; };
+		E38F39ED166B347F007A6A7D /* statueOfEvertTaube.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = statueOfEvertTaube.jpg; sourceTree = "<group>"; };
+		E38F3A0A166B6ED9007A6A7D /* A_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A_object.h; path = VuforiaAugmentedReality/A_object.h; sourceTree = SOURCE_ROOT; };
+		E38F3A0B166B6EDA007A6A7D /* C_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_object.h; path = VuforiaAugmentedReality/C_object.h; sourceTree = SOURCE_ROOT; };
+		E38F3A0C166B6EDA007A6A7D /* Q_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Q_object.h; path = VuforiaAugmentedReality/Q_object.h; sourceTree = SOURCE_ROOT; };
+		E38F3A0D166B6EDA007A6A7D /* R_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = R_object.h; path = VuforiaAugmentedReality/R_object.h; sourceTree = SOURCE_ROOT; };
+		E38F3A0E166B6EEF007A6A7D /* chair.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = chair.tga; sourceTree = "<group>"; };
+		E38F3A0F166B6EEF007A6A7D /* demon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demon.png; sourceTree = "<group>"; };
+		E38F3A10166B6EEF007A6A7D /* letter_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_A.png; sourceTree = "<group>"; };
+		E38F3A11166B6EEF007A6A7D /* letter_C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_C.png; sourceTree = "<group>"; };
+		E38F3A12166B6EEF007A6A7D /* letter_Q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_Q.png; sourceTree = "<group>"; };
+		E38F3A13166B6EEF007A6A7D /* letter_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_R.png; sourceTree = "<group>"; };
+		E38F3A1A166B6F78007A6A7D /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = VuforiaAugmentedReality/Cube.h; sourceTree = SOURCE_ROOT; };
+		E38F3A1B166B7064007A6A7D /* green_glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_glow.png; sourceTree = "<group>"; };
+		E38F3A25166C8F84007A6A7D /* Pretty_House.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pretty_House.jpg; sourceTree = "<group>"; };
+		E38F3A27166C95D8007A6A7D /* Free_Sofa_04.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Free_Sofa_04.h; sourceTree = "<group>"; };
+		E38F3A28166C97BB007A6A7D /* Sofa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sofa.jpg; sourceTree = "<group>"; };
+		E38F3A2A166CB4B0007A6A7D /* ButtonOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonOverlay.h; sourceTree = "<group>"; };
+		E38F3A2B166CB4B2007A6A7D /* ButtonOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ButtonOverlay.mm; sourceTree = "<group>"; };
+		E38F3A2C166CB4B5007A6A7D /* Dominoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dominoes.h; sourceTree = "<group>"; };
+		E38F3A2D166CB4B7007A6A7D /* Dominoes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dominoes.mm; sourceTree = "<group>"; };
+		E38F3A2E166CB4B8007A6A7D /* DomParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomParentViewController.h; sourceTree = "<group>"; };
+		E38F3A2F166CB4BD007A6A7D /* DomParentViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DomParentViewController.mm; sourceTree = "<group>"; };
+		E38F3A30166CB4C0007A6A7D /* SampleMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleMath.cpp; sourceTree = "<group>"; };
+		E38F3A31166CB4C1007A6A7D /* SampleMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleMath.h; sourceTree = "<group>"; };
+		E38F3A36166CBA1C007A6A7D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E38F3A38166CC1E4007A6A7D /* ButtonOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonOverlay.xib; sourceTree = "<group>"; };
+		E38F3A3A166CC721007A6A7D /* domino_tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = domino_tap.wav; sourceTree = "<group>"; };
+		E38F3A3C166CEA31007A6A7D /* TRS2012.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = TRS2012.dat; sourceTree = "<group>"; };
+		E38F3A3D166CEA32007A6A7D /* TRS2012.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TRS2012.xml; sourceTree = "<group>"; };
+		E38F3A45166D1558007A6A7D /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		E38F3A46166D1558007A6A7D /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		E38F3A47166D1558007A6A7D /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		E38F3A48166D1558007A6A7D /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		E38F3A49166D1558007A6A7D /* ARGeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoViewController.h; sourceTree = "<group>"; };
+		E38F3A4A166D1558007A6A7D /* ARGeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoViewController.m; sourceTree = "<group>"; };
+		E38F3A4B166D1558007A6A7D /* ARGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGLViewController.h; sourceTree = "<group>"; };
+		E38F3A4C166D1558007A6A7D /* ARGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGLViewController.m; sourceTree = "<group>"; };
+		E38F3A51166D156E007A6A7D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E38F3A53166D1586007A6A7D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E3A82E35166F03BB00E09067 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = ../build/lib/arm/libQCAR.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15DF68EA14517A9A00120640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A82E36166F03BB00E09067 /* libQCAR.a in Frameworks */,
+				E38F3A54166D1587007A6A7D /* CoreLocation.framework in Frameworks */,
+				E38F3A52166D156F007A6A7D /* MapKit.framework in Frameworks */,
+				15F21A3F145EE4E700C903EC /* CoreVideo.framework in Frameworks */,
+				E38F3A37166CBA20007A6A7D /* AudioToolbox.framework in Frameworks */,
+				15DF68F214517A9A00120640 /* UIKit.framework in Frameworks */,
+				15DF68F414517A9A00120640 /* Foundation.framework in Frameworks */,
+				15DF68F614517A9A00120640 /* CoreGraphics.framework in Frameworks */,
+				15DF68F814517A9A00120640 /* QuartzCore.framework in Frameworks */,
+				15DF68FA14517A9A00120640 /* OpenGLES.framework in Frameworks */,
+				15F21A39145EE4CE00C903EC /* CoreMedia.framework in Frameworks */,
+				15F21A3B145EE4D800C903EC /* SystemConfiguration.framework in Frameworks */,
+				15F21A41145EE4F100C903EC /* Security.framework in Frameworks */,
+				15F21A3D145EE4DF00C903EC /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15DF68E214517A9A00120640 = {
+			isa = PBXGroup;
+			children = (
+				E3A82E35166F03BB00E09067 /* libQCAR.a */,
+				E365223F166E3C13002E6AD5 /* Default-568h@2x.png */,
+				15DF68FB14517A9A00120640 /* 3DModel */,
+				15F18A03145EF7A10026C8D5 /* Resources */,
+				15DF68F014517A9A00120640 /* Frameworks */,
+				15DF68EE14517A9A00120640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15DF68EE14517A9A00120640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15DF68ED14517A9A00120640 /* VuforiaAugmentedReality.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15DF68F014517A9A00120640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15F18A01145EEF520026C8D5 /* libQCAR.a */,
+				E38F3A36166CBA1C007A6A7D /* AudioToolbox.framework */,
+				15F21A3C145EE4DF00C903EC /* AVFoundation.framework */,
+				15DF68F514517A9A00120640 /* CoreGraphics.framework */,
+				E38F3A53166D1586007A6A7D /* CoreLocation.framework */,
+				15F21A38145EE4CE00C903EC /* CoreMedia.framework */,
+				15F21A3E145EE4E700C903EC /* CoreVideo.framework */,
+				15DF68F314517A9A00120640 /* Foundation.framework */,
+				E38F3A51166D156E007A6A7D /* MapKit.framework */,
+				15DF68F914517A9A00120640 /* OpenGLES.framework */,
+				15DF68F714517A9A00120640 /* QuartzCore.framework */,
+				15F21A40145EE4F100C903EC /* Security.framework */,
+				15F21A3A145EE4D800C903EC /* SystemConfiguration.framework */,
+				15DF68F114517A9A00120640 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15DF68FB14517A9A00120640 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				E38F3A44166D1556007A6A7D /* GeoLocation */,
+				E365223B166E38B0002E6AD5 /* Dominoes */,
+				E38F39F7166B6CB8007A6A7D /* Models */,
+				15F21A17145EE33900C903EC /* ARCommon */,
+				E365223E166E3ABC002E6AD5 /* App */,
+				15DF68FC14517A9A00120640 /* Supporting Files */,
+			);
+			name = 3DModel;
+			path = VuforiaAugmentedReality;
+			sourceTree = "<group>";
+		};
+		15DF68FC14517A9A00120640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15DF68FD14517A9A00120640 /* VuforiaAugmentedReality-Info.plist */,
+				15DF690114517A9A00120640 /* VuforiaAugmentedReality-Prefix.pch */,
+				15DF690214517A9A00120640 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15F18A03145EF7A10026C8D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E38F39DF166AD9E8007A6A7D /* Default.png */,
+				76D674E114D05114003D8330 /* icon_vuforia_57x57.png */,
+				15F18A04145EF7CF0026C8D5 /* assets */,
+			);
+			name = Resources;
+			path = VuforiaAugmentedReality;
+			sourceTree = "<group>";
+		};
+		15F18A04145EF7CF0026C8D5 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E365223C166E3A30002E6AD5 /* Trackables */,
+				E365223D166E3A77002E6AD5 /* Textures */,
+				E38F3A3A166CC721007A6A7D /* domino_tap.wav */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		15F21A17145EE33900C903EC /* ARCommon */ = {
+			isa = PBXGroup;
+			children = (
+				15F21A18145EE33900C903EC /* AR_EAGLView.h */,
+				15F21A19145EE33900C903EC /* AR_EAGLView.mm */,
+				15F21A1A145EE33900C903EC /* ARParentViewController.h */,
+				15F21A1B145EE33900C903EC /* ARParentViewController.m */,
+				15F21A1C145EE33900C903EC /* ARViewController.h */,
+				15F21A1D145EE33900C903EC /* ARViewController.mm */,
+				15F21A1E145EE33900C903EC /* OverlayView.h */,
+				15F21A1F145EE33900C903EC /* OverlayView.m */,
+				15F21A20145EE33900C903EC /* OverlayViewController.h */,
+				15F21A21145EE33900C903EC /* OverlayViewController.mm */,
+				15F21A22145EE33900C903EC /* QCARutils.h */,
+				15F21A23145EE33900C903EC /* QCARutils.mm */,
+				15F21A24145EE33900C903EC /* Shaders */,
+				15F21A27145EE33900C903EC /* ShaderUtils.cpp */,
+				15F21A28145EE33900C903EC /* ShaderUtils.h */,
+				15F21A29145EE33900C903EC /* Texture.h */,
+				15F21A2A145EE33900C903EC /* Texture.mm */,
+			);
+			name = ARCommon;
+			path = ../../ARCommon;
+			sourceTree = "<group>";
+		};
+		15F21A24145EE33900C903EC /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				15E87DF31462AD13004113B1 /* BGShader.fsh */,
+				15E87DF41462AD13004113B1 /* BGShader.vsh */,
+				15F21A25145EE33900C903EC /* Shader.fsh */,
+				15F21A26145EE33900C903EC /* Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		E365223B166E38B0002E6AD5 /* Dominoes */ = {
+			isa = PBXGroup;
+			children = (
+				E38F3A38166CC1E4007A6A7D /* ButtonOverlay.xib */,
+				E38F3A2A166CB4B0007A6A7D /* ButtonOverlay.h */,
+				E38F3A2B166CB4B2007A6A7D /* ButtonOverlay.mm */,
+				E38F3A2C166CB4B5007A6A7D /* Dominoes.h */,
+				E38F3A2D166CB4B7007A6A7D /* Dominoes.mm */,
+				E38F3A2E166CB4B8007A6A7D /* DomParentViewController.h */,
+				E38F3A2F166CB4BD007A6A7D /* DomParentViewController.mm */,
+				E38F3A30166CB4C0007A6A7D /* SampleMath.cpp */,
+				E38F3A31166CB4C1007A6A7D /* SampleMath.h */,
+			);
+			name = Dominoes;
+			sourceTree = "<group>";
+		};
+		E365223C166E3A30002E6AD5 /* Trackables */ = {
+			isa = PBXGroup;
+			children = (
+				E30AB34F166DD31900D06397 /* FlakesBox.dat */,
+				E30AB350166DD31900D06397 /* FlakesBox.xml */,
+				E38F3A3C166CEA31007A6A7D /* TRS2012.dat */,
+				E38F3A3D166CEA32007A6A7D /* TRS2012.xml */,
+				E38F39E8166B1C1B007A6A7D /* StonesAndChips.dat */,
+				E38F39E9166B1C1B007A6A7D /* StonesAndChips.xml */,
+				15F18A05145EF7CF0026C8D5 /* Tarmac.dat */,
+				15F18A06145EF7CF0026C8D5 /* Tarmac.xml */,
+			);
+			name = Trackables;
+			sourceTree = "<group>";
+		};
+		E365223D166E3A77002E6AD5 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E3652241166E4730002E6AD5 /* 8018.jpg */,
+				E30AB351166DD31900D06397 /* TextureBowlAndSpoon.png */,
+				E30AB352166DD31900D06397 /* TextureWireframe.png */,
+				E38F3A28166C97BB007A6A7D /* Sofa.jpg */,
+				E38F3A25166C8F84007A6A7D /* Pretty_House.jpg */,
+				E38F3A1B166B7064007A6A7D /* green_glow.png */,
+				E38F3A0E166B6EEF007A6A7D /* chair.tga */,
+				E38F3A0F166B6EEF007A6A7D /* demon.png */,
+				E38F3A10166B6EEF007A6A7D /* letter_A.png */,
+				E38F3A11166B6EEF007A6A7D /* letter_C.png */,
+				E38F3A12166B6EEF007A6A7D /* letter_Q.png */,
+				E38F3A13166B6EEF007A6A7D /* letter_R.png */,
+				E38F39ED166B347F007A6A7D /* statueOfEvertTaube.jpg */,
+				E38F39E6166AE642007A6A7D /* banana.jpg */,
+				15F18A07145EF7CF0026C8D5 /* TextureTeapotRed.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		E365223E166E3ABC002E6AD5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				15DF690414517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.h */,
+				15DF690514517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.mm */,
+				15DF690E14517A9A00120640 /* EAGLView.h */,
+				15F21A36145EE46C00C903EC /* EAGLView.mm */,
+				15DB4DFE1461868E00502685 /* BTAParentViewController.h */,
+				15DB4DFF1461868E00502685 /* BTAParentViewController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E38F39F7166B6CB8007A6A7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E30AB34D166DD30200D06397 /* BowlAndSpoonModel.h */,
+				E38F3A27166C95D8007A6A7D /* Free_Sofa_04.h */,
+				E38F3A1A166B6F78007A6A7D /* Cube.h */,
+				E38F3A0A166B6ED9007A6A7D /* A_object.h */,
+				E38F3A0B166B6EDA007A6A7D /* C_object.h */,
+				E38F3A0C166B6EDA007A6A7D /* Q_object.h */,
+				E38F3A0D166B6EDA007A6A7D /* R_object.h */,
+				15F21A42145EE58300C903EC /* Teapot.h */,
+				E38F39E2166AE57B007A6A7D /* banana.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E38F3A44166D1556007A6A7D /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				E38F3A45166D1558007A6A7D /* ARCoordinate.h */,
+				E38F3A46166D1558007A6A7D /* ARCoordinate.m */,
+				E38F3A47166D1558007A6A7D /* ARGeoCoordinate.h */,
+				E38F3A48166D1558007A6A7D /* ARGeoCoordinate.m */,
+				E38F3A49166D1558007A6A7D /* ARGeoViewController.h */,
+				E38F3A4A166D1558007A6A7D /* ARGeoViewController.m */,
+				E38F3A4B166D1558007A6A7D /* ARGLViewController.h */,
+				E38F3A4C166D1558007A6A7D /* ARGLViewController.m */,
+			);
+			path = GeoLocation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15DF68EC14517A9A00120640 /* VuforiaAugmentedReality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15DF691914517A9A00120640 /* Build configuration list for PBXNativeTarget "VuforiaAugmentedReality" */;
+			buildPhases = (
+				15DF68E914517A9A00120640 /* Sources */,
+				15DF68EA14517A9A00120640 /* Frameworks */,
+				15DF68EB14517A9A00120640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VuforiaAugmentedReality;
+			productName = VuforiaAugmentedReality;
+			productReference = 15DF68ED14517A9A00120640 /* VuforiaAugmentedReality.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15DF68E414517A9A00120640 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 15DF68E714517A9A00120640 /* Build configuration list for PBXProject "VuforiaAugmentedReality" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15DF68E214517A9A00120640;
+			productRefGroup = 15DF68EE14517A9A00120640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15DF68EC14517A9A00120640 /* VuforiaAugmentedReality */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15DF68EB14517A9A00120640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F18A08145EF7CF0026C8D5 /* Tarmac.dat in Resources */,
+				15F18A09145EF7CF0026C8D5 /* Tarmac.xml in Resources */,
+				15F18A0A145EF7CF0026C8D5 /* TextureTeapotRed.png in Resources */,
+				76D674E214D05114003D8330 /* icon_vuforia_57x57.png in Resources */,
+				E38F39E0166AD9E8007A6A7D /* Default.png in Resources */,
+				E38F39E7166AE642007A6A7D /* banana.jpg in Resources */,
+				E38F39EA166B1C1B007A6A7D /* StonesAndChips.dat in Resources */,
+				E38F39EB166B1C1B007A6A7D /* StonesAndChips.xml in Resources */,
+				E38F39EE166B347F007A6A7D /* statueOfEvertTaube.jpg in Resources */,
+				E38F3A14166B6EEF007A6A7D /* chair.tga in Resources */,
+				E38F3A15166B6EEF007A6A7D /* demon.png in Resources */,
+				E38F3A16166B6EEF007A6A7D /* letter_A.png in Resources */,
+				E38F3A17166B6EEF007A6A7D /* letter_C.png in Resources */,
+				E38F3A18166B6EEF007A6A7D /* letter_Q.png in Resources */,
+				E38F3A19166B6EEF007A6A7D /* letter_R.png in Resources */,
+				E38F3A1C166B7064007A6A7D /* green_glow.png in Resources */,
+				E38F3A26166C8F84007A6A7D /* Pretty_House.jpg in Resources */,
+				E38F3A29166C97BF007A6A7D /* Sofa.jpg in Resources */,
+				E38F3A39166CC1E6007A6A7D /* ButtonOverlay.xib in Resources */,
+				E38F3A3B166CC721007A6A7D /* domino_tap.wav in Resources */,
+				E38F3A3E166CEA35007A6A7D /* TRS2012.dat in Resources */,
+				E38F3A3F166CEA35007A6A7D /* TRS2012.xml in Resources */,
+				E30AB353166DD31900D06397 /* FlakesBox.dat in Resources */,
+				E30AB354166DD31900D06397 /* FlakesBox.xml in Resources */,
+				E30AB355166DD31900D06397 /* TextureBowlAndSpoon.png in Resources */,
+				E30AB356166DD31900D06397 /* TextureWireframe.png in Resources */,
+				E3652240166E3C13002E6AD5 /* Default-568h@2x.png in Resources */,
+				E3652242166E4731002E6AD5 /* 8018.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15DF68E914517A9A00120640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15DF690314517A9A00120640 /* main.m in Sources */,
+				15DF690614517A9A00120640 /* VuforiaAugmentedRealityAppDelegate.mm in Sources */,
+				15F21A2B145EE33900C903EC /* AR_EAGLView.mm in Sources */,
+				15F21A2C145EE33900C903EC /* ARParentViewController.m in Sources */,
+				15F21A2D145EE33900C903EC /* ARViewController.mm in Sources */,
+				15F21A2E145EE33900C903EC /* OverlayView.m in Sources */,
+				15F21A2F145EE33900C903EC /* OverlayViewController.mm in Sources */,
+				15F21A30145EE33900C903EC /* QCARutils.mm in Sources */,
+				15F21A33145EE33900C903EC /* ShaderUtils.cpp in Sources */,
+				15F21A34145EE33900C903EC /* Texture.mm in Sources */,
+				15F21A37145EE46C00C903EC /* EAGLView.mm in Sources */,
+				15DB4E011461868F00502685 /* BTAParentViewController.m in Sources */,
+				E38F3A32166CB4C3007A6A7D /* ButtonOverlay.mm in Sources */,
+				E38F3A33166CB4C3007A6A7D /* Dominoes.mm in Sources */,
+				E38F3A34166CB4C3007A6A7D /* DomParentViewController.mm in Sources */,
+				E38F3A35166CB4C3007A6A7D /* SampleMath.cpp in Sources */,
+				E38F3A4D166D1558007A6A7D /* ARCoordinate.m in Sources */,
+				E38F3A4E166D1558007A6A7D /* ARGeoCoordinate.m in Sources */,
+				E38F3A4F166D1558007A6A7D /* ARGeoViewController.m in Sources */,
+				E38F3A50166D1558007A6A7D /* ARGLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15DF691714517A9A00120640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15DF691814517A9A00120640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15DF691A14517A9A00120640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VuforiaAugmentedReality/VuforiaAugmentedReality-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = ../build/include;
+				INFOPLIST_FILE = "VuforiaAugmentedReality/VuforiaAugmentedReality-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					../build/lib/arm,
+					"\"$(SRCROOT)/../build/lib/arm\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VuforiaAugmentedReality;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15DF691B14517A9A00120640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VuforiaAugmentedReality/VuforiaAugmentedReality-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = ../build/include;
+				INFOPLIST_FILE = "VuforiaAugmentedReality/VuforiaAugmentedReality-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					../build/lib/arm,
+					"\"$(SRCROOT)/../build/lib/arm\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VuforiaAugmentedReality;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		15E87DE91462A31B004113B1 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		15E87DEA1462A31B004113B1 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VuforiaAugmentedReality/VuforiaAugmentedReality-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = ../build/include;
+				INFOPLIST_FILE = "VuforiaAugmentedReality/VuforiaAugmentedReality-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					../build/lib/arm,
+					"\"$(SRCROOT)/../build/lib/arm\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VuforiaAugmentedReality;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15DF68E714517A9A00120640 /* Build configuration list for PBXProject "VuforiaAugmentedReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15DF691714517A9A00120640 /* Debug */,
+				15DF691814517A9A00120640 /* Release */,
+				15E87DE91462A31B004113B1 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15DF691914517A9A00120640 /* Build configuration list for PBXNativeTarget "VuforiaAugmentedReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15DF691A14517A9A00120640 /* Debug */,
+				15DF691B14517A9A00120640 /* Release */,
+				15E87DEA1462A31B004113B1 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15DF68E414517A9A00120640 /* Project object */;
+}
